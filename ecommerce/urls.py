@@ -33,6 +33,7 @@ urlpatterns = [
     path('about/', aboutPage, name='about'),
     path('admin/', admin.site.urls),
     url(r'^products/', include(("products.urls", 'products'), namespace='products')),
+    url(r'^cart/', include(("carts.urls", 'cart'), namespace='cart')),
     url(r'^search/', include(("search.urls", 'search'), namespace='serach')),
     # path('products/', ProductListView.as_view()),
     # path('products_fbv/', product_list_view),

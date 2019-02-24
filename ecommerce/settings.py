@@ -24,7 +24,7 @@ SECRET_KEY = 'dkl+fidsr60te2=2i9e0ohyuzl0$c9sttj-vrl1mbjx!ihx#4i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'products',
     'search',
+    'tags',
+    'carts',
 ]
 
 MIDDLEWARE = [
